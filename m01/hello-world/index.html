@@ -9,9 +9,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react.js" integrity="sha512-qVhjs/sNlQk1MgGqKA8q3Yrkv2pF0bPgTui09+UQaCBteEOrMO0XG4N9zG8/FgzCWrIFF/dFFOpmgXA+qxrrww==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.0/react-dom.js" integrity="sha512-gOCT1Y0/BBfeFo5K1fooo97J51N3ZCkVZL7n8hv/lJ6IoIL80hOol6lSdgo4fo7vc249sWyJZ7m9lWBPN9n/7Q==" crossorigin="anonymous"></script>
     <script>
-      var h1 = React.createElement('h1', null, 'Hello h1 React')
+      var div = React.createElement('div', { className: 'container' }, [
+        React.createElement('h1', null, 'Hello h1 React'),
+        React.createElement('span', null, 'Texto de Span')
+      ])
 
-      ReactDOM.render(h1, document.getElementById('app'))
+      ReactDOM.render(div, document.getElementById('app'))
     </script>
   </body>
 </html>
