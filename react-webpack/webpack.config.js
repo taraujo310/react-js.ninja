@@ -9,4 +9,12 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      include: /src/,
+      loader: 'babel'
+    }]
+  }
 }
